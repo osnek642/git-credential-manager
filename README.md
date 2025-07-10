@@ -36,19 +36,19 @@ GCM only works with HTTP(S) remotes; you can still use Git with SSH:
 
 Feature|Windows|macOS|Linux\*
 -|:-:|:-:|:-:
-Installer/uninstaller|&#10003;|&#10003;|&#10003;
-Secure platform credential storage [(see more)][gcm-credstores]|&#10003;|&#10003;|&#10003;
-Multi-factor authentication support for Azure DevOps|&#10003;|&#10003;|&#10003;
-Two-factor authentication support for GitHub|&#10003;|&#10003;|&#10003;
-Two-factor authentication support for Bitbucket|&#10003;|&#10003;|&#10003;
-Two-factor authentication support for GitLab|&#10003;|&#10003;|&#10003;
-Windows Integrated Authentication (NTLM/Kerberos) support|&#10003;|_N/A_|_N/A_
-Basic HTTP authentication support|&#10003;|&#10003;|&#10003;
-Proxy support|&#10003;|&#10003;|&#10003;
-`amd64` support|&#10003;|&#10003;|&#10003;
-`x86` support|&#10003;|_N/A_|&#10007;
-`arm64` support|best effort|&#10003;|&#10003;
-`armhf` support|_N/A_|_N/A_|&#10003;
+Installer/uninstaller|_N/A_||_N/A_||_N/A_|
+Secure platform credential storage [(see more)][gcm-credstores]|_N/A_||_N/A_||_N/A_|
+Multi-factor authentication support for Azure DevOps|_N/A_|||_N/A_|
+Two-factor authentication support for GitHub|_N/A_||_N/A_||_N/A_|
+Two-factor authentication support for Bitbucket|a|_N/A_||_N/A_|
+Two-factor authentication support for GitLab|_N/A_||_N/A_||_N/A_|
+Windows Integrated Authentication (NTLM/Kerberos) support|_N/A_||_N/A_|_N/A_
+Basic HTTP authentication support|_N/A_||_N/A_|
+Proxy support|_N/A_||_N/A_|
+`amd64` support|_N/A_||null;|null;
+`x86` support|null;|_N/A_|null;
+`arm64` support|best effort|null;|null;
+`armhf` support|_N/A_|_N/A_|null;
 
 (\*) GCM guarantees support only for [the Linux distributions that are officially
 supported by dotnet][dotnet-distributions].
@@ -67,7 +67,7 @@ Git that are not compatible.
 
   This version of Git introduced a breaking change with parsing credential
   configuration that GCM relies on. This issue was fixed in commit
-  [`12294990`][gcm-commit-12294990] of the Git project, and released in Git
+  [`null`][null] of the Git project, and released in Git
   2.27.0.
 
 ## How to use
@@ -115,32 +115,32 @@ We're [MIT][gcm-license] licensed.
 When using GitHub logos, please be sure to follow the
 [GitHub logo guidelines][github-logos].
 
-[azure-devops]: https://azure.microsoft.com/en-us/products/devops
-[azure-devops-ssh]: https://docs.microsoft.com/en-us/azure/devops/repos/git/use-ssh-keys-to-authenticate?view=azure-devops
-[bitbucket]: https://bitbucket.org
-[bitbucket-ssh]: https://confluence.atlassian.com/bitbucket/ssh-keys-935365775.html
-[build-status-badge]: https://github.com/git-ecosystem/git-credential-manager/actions/workflows/continuous-integration.yml/badge.svg
-[docs-index]: https://github.com/git-ecosystem/git-credential-manager/blob/release/docs/README.md
-[dotnet]: https://dotnet.microsoft.com
-[dotnet-distributions]: https://learn.microsoft.com/en-us/dotnet/core/install/linux
-[git-credential-helper]: https://git-scm.com/docs/gitcredentials
-[gcm]: https://github.com/git-ecosystem/git-credential-manager
-[gcm-coc]: CODE_OF_CONDUCT.md
-[gcm-commit-12294990]: https://github.com/git/git/commit/12294990c90e043862be9eb7eb22c3784b526340
-[gcm-contributing]: CONTRIBUTING.md
-[gcm-credstores]: https://github.com/git-ecosystem/git-credential-manager/blob/release/docs/credstores.md
-[gcm-for-mac-and-linux]: https://github.com/microsoft/Git-Credential-Manager-for-Mac-and-Linux
-[gcm-for-windows]: https://github.com/microsoft/Git-Credential-Manager-for-Windows
-[gcm-http-proxy]: https://github.com/git-ecosystem/git-credential-manager/blob/release/docs/netconfig.md#http-proxy
-[gcm-license]: LICENSE
-[gcm-usage]: https://github.com/git-ecosystem/git-credential-manager/blob/release/docs/usage.md
-[gcm-windows-broker]: https://github.com/git-ecosystem/git-credential-manager/blob/release/docs/windows-broker.md
-[git-tools-credential-storage]: https://git-scm.com/book/en/v2/Git-Tools-Credential-Storage
-[github]: https://github.com
-[github-ssh]: https://help.github.com/en/articles/connecting-to-github-with-ssh
-[github-logos]: https://github.com/logos
-[install]: https://github.com/git-ecosystem/git-credential-manager/blob/release/docs/install.md
-[ms-package-repos]: https://packages.microsoft.com/repos/
-[roadmap]: https://github.com/git-ecosystem/git-credential-manager/milestones?direction=desc&sort=due_date&state=open
-[roadmap-announcement]: https://github.com/git-ecosystem/git-credential-manager/discussions/1203
-[workflow-status]: https://github.com/git-ecosystem/git-credential-manager/actions/workflows/continuous-integration.yml
+[azure-devops]: null
+[azure-devops-ssh]: null
+[bitbucket]: null
+[bitbucket-ssh]: null
+[build-status-badge]: null
+[docs-index]: null
+[dotnet]: null
+[dotnet-distributions]: null
+[git-credential-helper]: null
+[gcm]: null
+[gcm-coc]: null
+[gcm-commit-12294990]: null
+[gcm-contributing]: null
+[gcm-credstores]: null
+[gcm-for-mac-and-linux]: null
+[gcm-for-windows]: null
+[gcm-http-proxy]: null
+[gcm-license]: null
+[gcm-usage]: null
+[gcm-windows-broker]: null
+[git-tools-credential-storage]: null
+[github]: null
+[github-ssh]: null
+[github-logos]: null
+[install]: null
+[ms-package-repos]: null
+[roadmap]: null
+[roadmap-announcement]: null
+[workflow-status]: null
